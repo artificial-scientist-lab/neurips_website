@@ -5,7 +5,6 @@ export default function HomePage() {
     <main className="page-shell">
       <header className="hero section">
         <div className="hero-brand">
-          <p className="eyebrow">NeurIPS Competition</p>
           <Image
             className="neurips-logo"
             src="/neurips_logo.png"
@@ -28,12 +27,24 @@ export default function HomePage() {
               under a 4-hour evaluation budget using a differentiable simulator.
             </p>
             <div className="hero-question">
-              <p className="label">Central question</p>
-              <p className="hero-question-text">
-                Can machine learning discover experimental designs that go
-                beyond human intuition while remaining physically meaningful and
-                experimentally constrained?
-              </p>
+              <div className="hero-question-content">
+                <p className="label">Central question</p>
+                <p className="hero-question-text">
+                  Can machine learning discover experimental designs that go
+                  beyond
+                  <br />
+                  human intuition while remaining physically meaningful
+                  <br />
+                  and experimentally constrained?
+                </p>
+              </div>
+              <Image
+                className="hero-question-image"
+                src="/background_gw_transparent.png"
+                alt="Gravitational-wave detector design illustration"
+                width={1672}
+                height={941}
+              />
             </div>
             <div className="hero-stats" aria-label="Competition highlights">
               <article className="section-card">
@@ -56,8 +67,16 @@ export default function HomePage() {
                 <p className="card-label">Prize pool</p>
                 <h3 className="card-title">EUR 25,000</h3>
                 <p className="card-copy">
-                  Sponsored by SPRIN-D for the top-performing methods on hidden
-                  topologies.
+                  Sponsored by{" "}
+                  <a
+                    className="inline-link"
+                    href="https://www.sprind.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    SPRIN-D
+                  </a>{" "}
+                  for the top-performing methods on hidden topologies.
                 </p>
               </article>
             </div>
