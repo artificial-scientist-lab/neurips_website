@@ -1,8 +1,20 @@
+import Image from "next/image";
+
 export default function HomePage() {
   return (
     <main className="page-shell">
       <header className="hero section">
-        <p className="eyebrow">NeurIPS Competition</p>
+        <div className="hero-brand">
+          <p className="eyebrow">NeurIPS Competition</p>
+          <Image
+            className="neurips-logo"
+            src="/neurips_logo.png"
+            alt="Neural Information Processing Systems"
+            width={500}
+            height={226}
+            priority
+          />
+        </div>
         <div className="hero-grid">
           <div className="hero-main">
             <p className="hero-kicker">
@@ -44,7 +56,8 @@ export default function HomePage() {
                 <p className="card-label">Prize pool</p>
                 <h3 className="card-title">EUR 25,000</h3>
                 <p className="card-copy">
-                  For the top-performing methods on hidden topologies.
+                  Sponsored by SPRIN-D for the top-performing methods on hidden
+                  topologies.
                 </p>
               </article>
             </div>
@@ -103,7 +116,7 @@ export default function HomePage() {
           <article className="section-card">
             <p className="card-label">Portal status</p>
             <h3 className="card-title">
-              Submission opens at the end of July 2026.
+              Submission opens in mid-July 2026.
             </h3>
             <p className="card-copy">
               Public leaderboard updates begin in August. Final submission

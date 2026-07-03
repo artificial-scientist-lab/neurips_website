@@ -6,6 +6,11 @@ export const metadata = {
     "Learn2Design NeurIPS competition website for gravitational-wave detector design algorithms."
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
