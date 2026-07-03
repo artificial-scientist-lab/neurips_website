@@ -198,7 +198,7 @@ p {
 
 .hero-question-image {
   display: block;
-  width: clamp(9rem, 18vw, 15rem);
+  width: clamp(13rem, 27vw, 22rem);
   height: auto;
   justify-self: end;
   margin-right: clamp(1rem, 3vw, 2.5rem);
@@ -384,8 +384,9 @@ code {
   }
 
   .hero-question-image {
-    width: min(46vw, 9.5rem);
+    width: min(68vw, 14rem);
     justify-self: center;
+    margin-top: 1.25rem;
     margin-right: 0;
   }
 
