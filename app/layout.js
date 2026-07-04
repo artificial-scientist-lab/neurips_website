@@ -3,7 +3,12 @@ import "./globals.css";
 export const metadata = {
   title: "Learn2Design Competition",
   description:
-    "Learn2Design NeurIPS competition website for gravitational-wave detector design algorithms."
+    "Learn2Design NeurIPS competition website for gravitational-wave detector design algorithms.",
+  icons: {
+    icon: "/asl_icon.png",
+    shortcut: "/asl_icon.png",
+    apple: "/asl_icon.png"
+  }
 };
 
 export const viewport = {
