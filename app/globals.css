@@ -234,6 +234,28 @@ h3 {
   line-height: 1;
 }
 
+.hero-team-artwork {
+  margin-top: 0.15rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.hero-team-artwork-frame {
+  max-width: 56rem;
+  aspect-ratio: 2.17 / 1;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid rgba(24, 20, 18, 0.08);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.hero-team-artwork img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 p {
   margin: 0;
   line-height: 1.75;
@@ -493,6 +515,14 @@ code {
   .hero-affiliations {
     grid-template-columns: 1fr;
     gap: 0.45rem;
+  }
+
+  .hero-team-artwork {
+    padding-top: 0.85rem;
+  }
+
+  .hero-team-artwork-frame {
+    border-radius: 10px;
   }
 
   .hero-stats,

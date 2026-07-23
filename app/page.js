@@ -66,6 +66,17 @@ export default function HomePage() {
                   </li>
                 ))}
               </ol>
+              <div className="hero-team-artwork">
+                <div className="hero-team-artwork-frame">
+                  <Image
+                    src="/learn2design2026_with_neurips.jpg"
+                    alt="Learn2Design 2026 competition logo with a gravitational-wave visualization"
+                    width={1600}
+                    height={900}
+                    sizes="(max-width: 640px) calc(100vw - 4rem), 56rem"
+                  />
+                </div>
+              </div>
             </section>
             <p className="hero-copy">
               Submit optimization algorithms, not fixed designs. Each method
