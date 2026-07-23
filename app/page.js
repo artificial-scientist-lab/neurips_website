@@ -185,7 +185,7 @@ export default function HomePage() {
             </h3>
             <p className="card-copy">
               Public leaderboard updates begin in August. Final submission
-              deadline: 30 October 2026.
+              deadline: 15. October 2026.
             </p>
           </article>
           <article className="section-card">
