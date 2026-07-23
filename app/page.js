@@ -32,9 +32,9 @@ export default function HomePage() {
             <h1 className="hero-title-logo">
               <Image
                 src="/learn2design2026_with_neurips.svg"
-                alt="Learn2Design 2026"
+                alt="NeurIPS and Learn2Design 2026"
                 width={1600}
-                height={520}
+                height={700}
                 sizes="(max-width: 640px) calc(100vw - 3rem), 52rem"
                 priority
                 unoptimized
