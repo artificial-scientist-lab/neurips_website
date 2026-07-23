@@ -29,10 +29,6 @@ export default function HomePage() {
       <header className="hero section">
         <div className="hero-grid">
           <div className="hero-main">
-            <p className="hero-kicker">
-              A physics experiment design competition for gravitational-wave
-              detectors
-            </p>
             <h1 className="hero-title-logo">
               <Image
                 src="/learn2design2026_with_neurips.svg"
@@ -44,6 +40,10 @@ export default function HomePage() {
                 unoptimized
               />
             </h1>
+            <p className="hero-kicker">
+              A physics experiment design competition for gravitational-wave
+              detectors
+            </p>
             <section className="hero-team" aria-labelledby="team-heading">
               <p className="hero-team-label" id="team-heading">
                 Team
