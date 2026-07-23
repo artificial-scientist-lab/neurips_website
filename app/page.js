@@ -1,5 +1,28 @@
 import Image from "next/image";
 
+const contributors = [
+  { name: "Jonathan Klimesch", affiliations: "1,2" },
+  { name: "Laurin Sefa", affiliations: "1" },
+  { name: "Soham Basu", affiliations: "1" },
+  { name: "Priya Kanagasabapathi", affiliations: "1" },
+  { name: "Sören Arlt", affiliations: "1,2" },
+  { name: "Xuemei Gu", affiliations: "3" },
+  { name: "Thomas Christie", affiliations: "1" },
+  { name: "Colin Doumont", affiliations: "1" },
+  { name: "Andreas Freise", affiliations: "4" },
+  { name: "Rana Adhikari", affiliations: "5" },
+  { name: "Philipp Hennig", affiliations: "1" },
+  { name: "Mario Krenn", affiliations: "1" },
+];
+
+const affiliations = [
+  "Department for Computer Science, Faculty of Science, University of Tübingen, Tübingen, Germany",
+  "Feyer, Tübingen, Germany",
+  "Institut für Festkörpertheorie und Optik, Friedrich-Schiller-Universität Jena, Jena, Germany",
+  "Nikhef, National Institute for Subatomic Physics, Amsterdam, The Netherlands",
+  "Institute for Quantum Information and Matter, California Institute of Technology, Pasadena, CA, USA",
+];
+
 export default function HomePage() {
   return (
     <main className="page-shell">
@@ -21,6 +44,29 @@ export default function HomePage() {
               detectors
             </p>
             <h1>Learn2Design</h1>
+            <section className="hero-team" aria-labelledby="team-heading">
+              <p className="hero-team-label" id="team-heading">
+                Team
+              </p>
+              <p className="hero-authors">
+                {contributors.map((contributor) => (
+                  <span className="hero-author" key={contributor.name}>
+                    {contributor.name}
+                    <sup>{contributor.affiliations}</sup>
+                  </span>
+                ))}
+              </p>
+              <ol className="hero-affiliations">
+                {affiliations.map((affiliation, index) => (
+                  <li key={affiliation}>
+                    <span className="affiliation-number" aria-hidden="true">
+                      {index + 1}
+                    </span>
+                    <span>{affiliation}</span>
+                  </li>
+                ))}
+              </ol>
+            </section>
             <p className="hero-copy">
               Submit optimization algorithms, not fixed designs. Each method
               tunes roughly 200 continuous parameters for a detector topology
