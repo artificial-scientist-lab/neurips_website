@@ -84,19 +84,6 @@ main {
   padding-top: 3rem;
 }
 
-.hero-brand {
-  margin-bottom: 1.15rem;
-}
-
-.neurips-logo {
-  display: block;
-  width: clamp(10.5rem, 18vw, 14rem);
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-  opacity: 0.96;
-}
-
 .hero-grid {
   max-width: none;
   min-width: 0;
@@ -142,6 +129,18 @@ h1 {
   max-width: none;
   font-size: 5.75rem;
   overflow-wrap: normal;
+}
+
+.hero-title-logo {
+  width: min(100%, 52rem);
+  margin-top: 0.4rem;
+  line-height: 0;
+}
+
+.hero-title-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 h2 {
@@ -232,28 +231,6 @@ h3 {
   font-size: 0.68rem;
   font-weight: 800;
   line-height: 1;
-}
-
-.hero-team-artwork {
-  margin-top: 0.15rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--line);
-}
-
-.hero-team-artwork-frame {
-  max-width: 56rem;
-  aspect-ratio: 2.17 / 1;
-  margin: 0 auto;
-  overflow: hidden;
-  border: 1px solid rgba(24, 20, 18, 0.08);
-  border-radius: 14px;
-  background: #fff;
-}
-
-.hero-team-artwork img {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 p {
@@ -443,14 +420,6 @@ code {
     padding-top: 1.5rem;
   }
 
-  .hero-brand {
-    margin-bottom: 1rem;
-  }
-
-  .neurips-logo {
-    width: 10rem;
-  }
-
   h1 {
     font-size: 2.75rem;
     line-height: 1;
@@ -515,14 +484,6 @@ code {
   .hero-affiliations {
     grid-template-columns: 1fr;
     gap: 0.45rem;
-  }
-
-  .hero-team-artwork {
-    padding-top: 0.85rem;
-  }
-
-  .hero-team-artwork-frame {
-    border-radius: 10px;
   }
 
   .hero-stats,

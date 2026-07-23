@@ -27,23 +27,23 @@ export default function HomePage() {
   return (
     <main className="page-shell">
       <header className="hero section">
-        <div className="hero-brand">
-          <Image
-            className="neurips-logo"
-            src="/neurips_logo.png"
-            alt="Neural Information Processing Systems"
-            width={500}
-            height={226}
-            priority
-          />
-        </div>
         <div className="hero-grid">
           <div className="hero-main">
             <p className="hero-kicker">
               A physics experiment design competition for gravitational-wave
               detectors
             </p>
-            <h1>Learn2Design</h1>
+            <h1 className="hero-title-logo">
+              <Image
+                src="/learn2design2026_with_neurips.svg"
+                alt="Learn2Design 2026"
+                width={1600}
+                height={700}
+                sizes="(max-width: 640px) calc(100vw - 3rem), 52rem"
+                priority
+                unoptimized
+              />
+            </h1>
             <section className="hero-team" aria-labelledby="team-heading">
               <p className="hero-team-label" id="team-heading">
                 Team
@@ -66,18 +66,6 @@ export default function HomePage() {
                   </li>
                 ))}
               </ol>
-              <div className="hero-team-artwork">
-                <div className="hero-team-artwork-frame">
-                  <Image
-                    src="/learn2design2026_with_neurips.svg"
-                    alt="Learn2Design 2026 competition logo with a gravitational-wave visualization"
-                    width={1600}
-                    height={900}
-                    sizes="(max-width: 640px) calc(100vw - 4rem), 56rem"
-                    unoptimized
-                  />
-                </div>
-              </div>
             </section>
             <p className="hero-copy">
               Submit optimization algorithms, not fixed designs. Each method
