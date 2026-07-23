@@ -38,7 +38,7 @@ export default function HomePage() {
                 src="/learn2design2026_with_neurips.svg"
                 alt="Learn2Design 2026"
                 width={1600}
-                height={700}
+                height={520}
                 sizes="(max-width: 640px) calc(100vw - 3rem), 52rem"
                 priority
                 unoptimized
