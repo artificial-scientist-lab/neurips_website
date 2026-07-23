@@ -69,11 +69,12 @@ export default function HomePage() {
               <div className="hero-team-artwork">
                 <div className="hero-team-artwork-frame">
                   <Image
-                    src="/learn2design2026_with_neurips.jpg"
+                    src="/learn2design2026_with_neurips.svg"
                     alt="Learn2Design 2026 competition logo with a gravitational-wave visualization"
                     width={1600}
                     height={900}
                     sizes="(max-width: 640px) calc(100vw - 4rem), 56rem"
+                    unoptimized
                   />
                 </div>
               </div>
